@@ -1,0 +1,31 @@
+ALGORITHME	algo2_solition1
+
+VAR
+	T1 : array_of integer[];
+	temp,i,j : integer;
+BEGIN
+// ************** saisir la taile de tableau ********** 
+        Write("donneez la taile de ces tableau");
+        Read(n);
+  // ************** ramplire tableau T1 ************ 
+         Write("donneez les valeux de tableau T1");
+            FOR i FROM 0 TO n-1 STEP 1 DO
+           read(T1[i]);
+   // ************** tri par selection ************ 
+        FOR  i  FROM 0 TO n-2 STEP 1 DO
+               minpos := i; 
+		FOR j FROM 0 TO n-1 STEP 1 DO
+
+                    IF (T[j] <  T[minpos]
+                        minpos := j;
+                    END_IF
+            END_FOR
+            temp := T[minpos];
+            T[minpos] :=T[i];
+            T[i]:= temp;
+
+       END_FOR
+ // ************** affichage ********* 
+
+        FOR  i  FROM 0 TO n-1 STEP DO 
+          Write(T[i])
